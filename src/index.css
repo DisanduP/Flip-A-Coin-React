@@ -1,0 +1,18 @@
+/* ensure the app root fills the viewport and centers its content */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* center the app's top-level container both horizontally and vertically */
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* small safeguard so .container doesn't expand full width on large screens */
+.container {
+  width: 100%;
+  max-width: 420px;
+}
